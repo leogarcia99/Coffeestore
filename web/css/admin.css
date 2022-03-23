@@ -1,0 +1,53 @@
+
+
+
+.gridd{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  
+}
+
+.formulario{
+    width: 80%;
+    margin: 10px;
+}
+
+.formulario input, .formulario label, .formulario button{
+    margin-top: 10px;
+}
+
+
+.targetaEdicion{
+     width: 400px;
+    height: 550px;
+    top: -630px;
+    right: 500px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: solid #198754;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    
+    transition: 0.5s;
+}
+
+.bajaEdicion{
+    width: 400px;
+    height: 650px;
+  
+    right: 500px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: solid #198754;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    
+    transition: 0.5s;
+    top: 30px;
+   
+}

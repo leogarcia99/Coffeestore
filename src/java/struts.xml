@@ -1,0 +1,71 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        
+         <action name="Resgistra"  class="action.crea_cuenta" method="registra">
+             <result name="exito">../jsp/iniciar_sesion.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+
+       
+        <action name="registraP" class="action.Guarda_producto" method="registra">
+             <result name="exito">../jsp/administrador.jsp</result>
+             <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+        <action name="eliminaPro" class="action.Guarda_producto" method="Eliminap">
+             <result name="success">../jsp/administrador.jsp</result>
+             <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+        <action name="iniciar"  class="action.cargarProducto">
+             <result name="success">../jsp/principal.jsp</result>
+             <result name="admin">../jsp/administrador.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+        <action name="GuardarEnEspera" class="action.guardaCarrito">
+            <result name="success">../jsp/principal.jsp</result>
+        </action>
+        
+        
+        <action name="guardaFav" class="action.guardaFav">
+            <result name="success">../jsp/principal.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+        <action name="RealizaPedido" class="action.AgregarPedido">
+             <result name="success">../jsp/principal.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+        <action name="CancelarPedido" class="action.CancelaPedido">
+             <result name="success">../jsp/principal.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+         
+        <action name="ActualizaProducto" class="action.cargarProducto" method="ActualizaP">
+             <result name="success">../jsp/administrador.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+        <action name="MarcarEnvio" class="action.cargarProducto" method="actualizaEnvio">
+             <result name="success">../jsp/administrador.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        
+         <action name="marcaCancelado" class="action.cargarProducto" method="Cancelado">
+             <result name="success">../jsp/administrador.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+         <action name="marcaEntregado" class="action.cargarProducto" method="Entregado">
+             <result name="success">../jsp/administrador.jsp</result>
+            <result name="error">../jsp/error.jsp</result>
+        </action>
+        </package>
+</struts>

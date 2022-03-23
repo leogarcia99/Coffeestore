@@ -1,0 +1,287 @@
+
+
+nav{
+    }
+
+.targeta-carrito{
+   width: 400px;
+    height: auto;
+    top: -430px;
+    left: 400px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: solid #0d6efd;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    
+}
+.contenedor{
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px
+  
+}
+
+.listaCarrito{
+    width: 100%;
+    height: auto;
+    margin-bottom:  5px;
+    background-color:#4c6dfc;
+    opacity: 0.7;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding:10px;
+    text-align: center
+}
+
+
+.contenedor::-webkit-scrollbar {
+    width: 1px;     /* Tamaño del scroll en vertical */
+    height: 1px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.targeta-carrito.star{
+    backdrop-filter: blur(5px);
+    top: 130px;
+    
+ 
+}
+
+
+.targeta-favoritos{
+     width: 400px;
+    height: 400px;
+    top: 120px;
+    left: -400px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: solid #dc3545;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.targeta-favoritos.star1{
+   backdrop-filter: blur(5px);
+    left: 400px;
+    z-index: 100;
+}
+
+.targeta-user{
+    width: 700px;
+    height: 500px;
+    top: 70px;
+    right: -800px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: solid #198754;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
+
+.targeta-user.star2{
+    backdrop-filter: blur(5px);
+    right: 350px;
+    z-index: 100;
+}
+
+.Products{
+    width: 100%;
+    height: auto;
+    background-image: url("https://image.freepik.com/free-photo/background-roasted-fresh-brown-coffee-beans-perfect-cool-wallpaper_181624-13741.jpg");
+   
+      
+    
+}
+
+.Products h1{
+    color: white;
+    margin: 20px 0px 10px 40px;
+}
+
+.disp{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+     
+}
+.cardd{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+   
+    transition: 0.4s;
+}
+
+
+.cardd .fav{
+    width: 100%;
+    height: 35px;
+
+}
+
+.cardd .fav button{
+    
+    font-size: 28px;
+    margin: 5px;
+  
+}
+
+
+.center-card{
+    width: 100%;
+    text-align: center;
+    
+}
+.center-card img{
+    width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.despliega{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.despliega input{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid #fff;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    margin: 20px;
+    color: white;
+   
+}
+
+
+
+.cardd:hover > .despliega{
+     height: 60px;
+}
+
+.butons {
+    padding: 10px;
+    text-align: center;
+}
+
+.butons input{
+    border-style: none;
+   
+}
+
+.targeta-confirma-carrito{
+    width: 400px;
+    height: 400px;
+    top: -420px;
+    left: 400px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(7px);
+    border: solid #0d6efd;
+    border-radius: 20px;
+    
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.baja-targeta{
+    width: 400px;
+    height: 400px;
+    top: 130px;
+    left: 400px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(7px);
+    border: solid #0d6efd;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.close{
+    width: 100%;
+    height: 40px;
+    text-align: right;
+}
+
+.targeta-confirma-carrito input{
+    border: solid #0d6efd 2px;
+    margin-bottom: 10px;
+}
+
+.targeta-confirma-carrito button{
+    margin-bottom: 10px;
+}
+
+#inputidp, #inputidu{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.listPedidos{
+    width: 100%;
+    height: 300px;
+}
+
+.targeta-confirmaPedido{
+     width: 450px;
+    height: 500px;
+    bottom: -770px;
+    right: 350px;
+    position: fixed;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: solid #198754;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px;
+    
+   
+}
+
+.targeta-confirmaPedido.subir{
+     bottom: 70px;
+}
+
+.listaMispedidos{
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
